@@ -1,0 +1,246 @@
+@import "../../App.scss";
+
+.container-header {
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  padding-block: 45px;
+  img {
+    width: 150px;
+    object-fit: contain;
+  }
+}
+
+.container-section {
+  height: 750px;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-meio {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.section-inf {
+  width: 49%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+}
+
+.inf-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  h1 {
+    min-height: 190px;
+    width: 100%;
+    font-size: 45px;
+    line-height: 57px;
+    font-weight: 700;
+    font-style: normal;
+    color: $cor-de-title;
+
+    span {
+      color: #1ab394;
+    }
+  }
+
+  .ImgPosto {
+    width: 90%;
+    min-height: 250px;
+    object-fit: contain;
+  }
+  p {
+    width: 100%;
+    margin: 15px 0px;
+    text-align: start;
+  }
+}
+.inf-text {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 0px;
+    font-size: 16px;
+
+    .FaApple {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      color: #1ab394;
+    }
+  }
+}
+
+.section-form {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.form-table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.form-inf {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+
+  .label-input {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    margin: 12px 0px;
+    span {
+      color: #f74926;
+    }
+
+    label {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    input,
+    select {
+      background-color: #f5f8fa;
+      height: 40px;
+      width: 100%;
+      padding: 10px;
+      padding-inline: 10px;
+      border: solid 1px rgb(226, 226, 226);
+      border-radius: 3px;
+      font-weight: 500;
+      outline: none; /* Remove a borda padrão do elemento quando em foco */
+
+      &:focus {
+        border: solid 1px rgb(173, 216, 230); /* Define a cor de borda azul claro quando em foco */
+      }
+    }
+  }
+  button {
+    margin: 0 auto;
+    width: 100%;
+    padding-block: 10px;
+    border-radius: 3px;
+    border: 1px solid #1ab394;
+    color: #fff;
+    background: #1ab394;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .section-meio {
+    width: 80%;
+  }
+}
+
+@media (max-width: 950px) {
+  .section-meio {
+    width: 90%;
+  }
+
+  .container-section {
+    height: 950px;
+    background-color: red;
+  }
+  .container-section {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-section {
+    margin-top: 5px;
+    height: auto;
+    padding-block: 20px;
+  }
+  .section-form {
+    width: 100%;
+  }
+  .section-inf {
+    width: 100%;
+    margin-bottom: 20px;
+
+    .inf-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+
+      h1 {
+        min-height: 140px;
+        width: 100%;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        font-style: normal;
+        color: $cor-de-title;
+
+        span {
+          color: #f74926;
+        }
+      }
+    }
+  }
+  .section-meio {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+}

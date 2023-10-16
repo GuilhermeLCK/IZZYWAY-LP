@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+$cor-de-fundo: #f0f7ff;
+
+$cor-de-fonteP: #485460;
+
+$cor-de-title: #0b0040;
+
+$tamanho-de-fonteP: 18px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  p {
+    font-size: $tamanho-de-fonteP;
+    color: $cor-de-fonteP;
+  }
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #f0f7ff;
+  padding-inline: 10px;
+}
