@@ -3,12 +3,23 @@ import "./Header.scss";
 import Goomer from "../../img/LOGO-CIMA.png";
 import { FaApple, FaRegClock } from "react-icons/fa";
 
-import ImgPosto from "../../img/gastro.webp";
+import Banner from "../../img/IzzyWayBanner.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Header = () => {
   const [text] = useTypewriter({
-    words: ["Gastropub", "Hotéis ", "Lanchonetes"],
+    words: [
+      "Açaiterias",
+      "Bares e Restaurantes ",
+      "Cafeterias",
+      "Hamburguerias",
+      "Padarias",
+      "Lanchonetee",
+      "Pizzaria",
+      "Sushi",
+      "Quiosque",
+      "Sorveteria",
+    ],
     loop: true,
     typeSpeed: 140,
     deleteSpeed: 70,
@@ -17,22 +28,23 @@ const Header = () => {
   return (
     <>
       <header className="container-header">
-        <img src={Goomer} alt="Goomer" />
+        <img src={Goomer} alt="IzzyWay-Logo" />
       </header>
 
       <div className="container-section">
         <div className="section-meio">
           <div className="section-inf">
             <div className="inf-img">
-              <img src={ImgPosto} alt="ImgPosto" className="ImgPosto" />
+              <img src={Banner} alt="IzzyWay-Banner" className="ImgPosto" />
 
               <h1>
-                Solução de Sistema em Nuvem para seu <br></br>
+                Facilite a gestão do seu negócio com nosso Sistema de Gestão
+                Online, perfeito para <br />
                 <span>{text}</span>
               </h1>
               <p>
-                Encante na experiência de seus clientes, aumente a agilidade de
-                seu time e diminua seus custos operacionais.
+                Surpreenda seus clientes, otimize a produtividade da equipe e
+                reduza os gastos operacionais.
               </p>
             </div>
             <div className="inf-text">
@@ -41,23 +53,20 @@ const Header = () => {
                 Reduza em até 20% o tempo de espera
               </p>
               <p>
-                {" "}
                 <FaApple className="FaApple" />
                 Aumente 50% o seu faturamento
               </p>
               <p>
-                {" "}
                 <FaRegClock className="FaApple" />
-                Reduza em até 60% os custos com equipe
+                Gerencie todos os seus negócios na mesmo plataforma
               </p>
               <p>
-                {" "}
-                <FaApple className="FaApple" />
-                Cardápio 100% digital
+                <FaApple className="FaApple" />A praticidade da Computação em
+                Nuvem
               </p>
               <p>
                 <FaRegClock className="FaApple" />
-                Integrado com os melhores Sistemas de Gestão
+                Integrado com os melhores Sistemas de Markkplace
               </p>
             </div>
           </div>

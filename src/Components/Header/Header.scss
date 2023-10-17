@@ -13,9 +13,10 @@
 }
 
 .container-section {
-  height: 750px;
+  min-height: 1200px;
+  height: auto;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 20px;
   display: flex;
   display: flex;
   align-items: center;
@@ -47,7 +48,7 @@
   width: 100%;
 
   h1 {
-    min-height: 190px;
+    min-height: 300px;
     width: 100%;
     font-size: 45px;
     line-height: 57px;
@@ -61,13 +62,13 @@
   }
 
   .ImgPosto {
-    width: 90%;
+    width: 95%;
     min-height: 250px;
     object-fit: contain;
   }
   p {
+    margin: 10px 0;
     width: 100%;
-    margin: 15px 0px;
     text-align: start;
   }
 }

@@ -17,6 +17,10 @@ $tamanho-de-fonteP: 18px;
     font-size: $tamanho-de-fonteP;
     color: $cor-de-fonteP;
   }
+
+  button {
+    cursor: pointer;
+  }
 }
 
 body {

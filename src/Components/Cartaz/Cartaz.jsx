@@ -2,8 +2,15 @@ import React from "react";
 import "./Cartaz.scss";
 import { FaApple, FaRegClock } from "react-icons/fa";
 import Tablet from "../../img/tablet.webp";
+import PDV from "../../img/PDV.png";
+import MOBILE from "../../img/mobileipos.png";
+import ENCOMENDA from "../../img/encomenda.png";
 
 function Cartaz() {
+  function scrollToConsultor() {
+    window.scrollTo({ top: 250, behavior: "smooth" });
+  }
+
   return (
     <div className="container-cartaz">
       <div className="cartaz-meio">
@@ -13,17 +20,50 @@ function Cartaz() {
           </div>
           <div className="section-cartazes">
             <div className="cartaz">
-              <img src={Tablet} alt="Tablet" />
+              <img src={PDV} alt="Tablet" />
 
               <div className="cartaz-inf">
-                <h2>Cardápio para delivery</h2>
+                <h2>iPOS PDV</h2>
                 <div className="inf-text">
                   <span>
                     <FaApple className="fa" />
                   </span>
                   <p>
-                    Aumento das vendas em até 20% com sugestões e recomendações
-                    personalizadas.
+                    Com o iPOS, você trabalha com a balança integrada ao sistema
+                    e uma gestão eficaz de frente de loja e controle de insumos.
+                    Tudo isso através de uma tela desenhada para lançamentos
+                    rápidos de self-service.
+                  </p>
+                </div>
+
+                <div className="inf-text">
+                  <span>
+                    <FaApple className="fa" />
+                  </span>
+                  <p>
+                    Para o bom funcionamento do salão, é necessário uma gestão
+                    que inclua pedidos feitos direto na mesa, envio automático
+                    para cozinha, pagamento e outras operações fundamentais.
+                    Garanta o melhor atendimento para o seu cliente com um
+                    sistema que funciona e é especialista no seu negócio.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="cartaz">
+              <img src={ENCOMENDA} alt="Tablet" />
+
+              <div className="cartaz-inf">
+                <h2>iPOS Mobile</h2>
+                <div className="inf-text">
+                  <span>
+                    <FaApple className="fa" />
+                  </span>
+                  <p>
+                    Através deste App Intuitivo sua equipe de atendimento terá
+                    uma ter melhor experiência vendas, enviando, consultando e
+                    imprimindo pedidos a partir de um smartphone.
                   </p>
                 </div>
                 <div className="inf-text">
@@ -31,8 +71,8 @@ function Cartaz() {
                     <FaApple className="fa" />
                   </span>
                   <p>
-                    Aumento das vendas em até 20% com sugestões e recomendações
-                    personalizadas.
+                    Atendimentos mais rápidos, proporcionam uma melhor
+                    experiência e fidelização de seus clientes.
                   </p>
                 </div>
                 <div className="inf-text">
@@ -48,17 +88,19 @@ function Cartaz() {
             </div>
 
             <div className="cartaz">
-              <img src={Tablet} alt="Tablet" />
+              <img src={MOBILE} alt="Tablet" />
 
               <div className="cartaz-inf">
-                <h2>Cardápio para delivery</h2>
+                <h2>Gerenciamento unificado de pedidos de Delivery</h2>
                 <div className="inf-text">
                   <span>
                     <FaApple className="fa" />
                   </span>
                   <p>
-                    Aumento das vendas em até 20% com sugestões e recomendações
-                    personalizadas.
+                    Integração com apps de Entregas e motoboys, integração com
+                    apps de Entregas e motoboys Entrengue seus pedidos com frota
+                    própria ou integrando automáticamente com nossos parceiros
+                    de logística
                   </p>
                 </div>
                 <div className="inf-text">
@@ -66,56 +108,19 @@ function Cartaz() {
                     <FaApple className="fa" />
                   </span>
                   <p>
-                    Aumento das vendas em até 20% com sugestões e recomendações
-                    personalizadas.
-                  </p>
-                </div>
-                <div className="inf-text">
-                  <span>
-                    <FaApple className="fa" />
-                  </span>
-                  <p>
-                    Aumento das vendas em até 20% com sugestões e recomendações
-                    personalizadas.
+                    Controle os principais marketplace em uma única tela, evite
+                    o retrabalho de passar informações de outros apps
+                    manualmente e gerencie todas as informações em sua frente de
+                    loja. Tudo automático para você ganhar tempo
                   </p>
                 </div>
               </div>
             </div>
-
-            <div className="cartaz">
-              <img src={Tablet} alt="Tablet" />
-
-              <div className="cartaz-inf">
-                <h2>Cardápio para delivery</h2>
-                <div className="inf-text">
-                  <span>
-                    <FaApple className="fa" />
-                  </span>
-                  <p>
-                    Aumento das vendas em até 20% com sugestões e recomendações
-                    personalizadas.
-                  </p>
-                </div>
-                <div className="inf-text">
-                  <span>
-                    <FaApple className="fa" />
-                  </span>
-                  <p>
-                    Aumento das vendas em até 20% com sugestões e recomendações
-                    personalizadas.
-                  </p>
-                </div>
-                <div className="inf-text">
-                  <span>
-                    <FaApple className="fa" />
-                  </span>
-                  <p>
-                    Aumento das vendas em até 20% com sugestões e recomendações
-                    personalizadas.
-                  </p>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div className="section-button">
+            <button onClick={scrollToConsultor}>
+              Quero conhecer outos modulos
+            </button>
           </div>
         </div>
       </div>
