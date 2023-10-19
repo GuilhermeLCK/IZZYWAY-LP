@@ -34,41 +34,14 @@ const Header = () => {
       <div className="container-section">
         <div className="section-meio">
           <div className="section-inf">
-            <div className="inf-img">
-              <img src={Banner} alt="IzzyWay-Banner" className="ImgPosto" />
-
-              <h1>
-                Facilite a gestão do seu negócio com nosso Sistema de Gestão
-                Online, perfeito para <br />
-                <span>{text}</span>
-              </h1>
-              <p>
-                Surpreenda seus clientes, otimize a produtividade da equipe e
-                reduza os gastos operacionais.
-              </p>
-            </div>
-            <div className="inf-text">
-              <p>
-                <FaRegClock className="FaApple" />
-                Reduza em até 20% o tempo de espera
-              </p>
-              <p>
-                <FaApple className="FaApple" />
-                Aumente 50% o seu faturamento
-              </p>
-              <p>
-                <FaRegClock className="FaApple" />
-                Gerencie todos os seus negócios na mesmo plataforma
-              </p>
-              <p>
-                <FaApple className="FaApple" />A praticidade da Computação em
-                Nuvem
-              </p>
-              <p>
-                <FaRegClock className="FaApple" />
-                Integrado com os melhores Sistemas de Markkplace
-              </p>
-            </div>
+            <div className="flash"></div>
+            <h1>
+              Transforme a gestão do seu negócio com o <span>IzzyWay</span>
+            </h1>
+            <p>
+              O sistema de gestão ideal para <br />
+              <span>{text}</span>
+            </p>
           </div>
           <div className="section-form">
             <div className="form-table">
@@ -123,7 +96,7 @@ const Header = () => {
                   </select>
                 </div>
 
-                <button> Falar com um consultor</button>
+                <button id="Button_Consultor"> Falar com um consultor</button>
               </div>
             </div>
           </div>

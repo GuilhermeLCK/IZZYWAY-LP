@@ -119,7 +119,7 @@ function Cartaz() {
           </div>
           <div className="section-button">
             <button onClick={scrollToConsultor}>
-              Quero conhecer outos modulos
+              Quero conhecer outros modulos
             </button>
           </div>
         </div>

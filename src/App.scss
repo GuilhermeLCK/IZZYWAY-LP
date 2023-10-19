@@ -26,5 +26,23 @@ $tamanho-de-fonteP: 18px;
 body {
   font-family: "Manrope", sans-serif;
   background-color: #f0f7ff;
-  padding-inline: 10px;
 }
+
+/* Estilize a barra de rolagem */
+::-webkit-scrollbar {
+  width: 6px; /* Largura da barra de rolagem */
+  background-color: #1ab394;
+}
+
+/* Estilize o polegar da barra de rolagem (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+  background: #1ab394; /* Cor de fundo do polegar */
+  border-radius: 15px; /* Raio das bordas do polegar */
+}
+
+/* Estilize a faixa da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #000000; /* Cor de fundo da faixa da barra de rolagem */
+}
+
+/* Estilize os botões de seta, se disponíveis */

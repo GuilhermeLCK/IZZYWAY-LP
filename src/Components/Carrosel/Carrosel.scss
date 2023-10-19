@@ -1,0 +1,73 @@
+@mixin white-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+$animationSpeed: 5s;
+
+// Animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+// Styling
+.slider {
+  background: #f0f7ff;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.27);
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.27);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    @include white-gradient;
+    content: "";
+    height: 150px;
+    position: absolute;
+    width: 50px;
+    z-index: 2;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+
+  .slide {
+    height: auto;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    img {
+      object-fit: cover;
+      height: auto;
+      width: 250px;
+    }
+  }
+}

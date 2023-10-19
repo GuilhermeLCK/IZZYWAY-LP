@@ -1,11 +1,18 @@
 @import "../../App.scss";
 
 .container-header {
+  background-color: #153955;
   display: flex;
   height: 90px;
   justify-content: center;
   align-items: center;
   padding-block: 45px;
+  box-shadow: 0px 3px 33px -2px rgba(0, 0, 0, 0.97);
+  -webkit-box-shadow: 0px 3px 33px -2px rgba(0, 0, 0, 0.97);
+  -moz-box-shadow: 0px 3px 33px -2px rgba(0, 0, 0, 0.97);
+  z-index: 999;
+  position: relative;
+
   img {
     width: 150px;
     object-fit: contain;
@@ -16,83 +23,59 @@
   min-height: 1200px;
   height: auto;
   width: 100%;
-  margin-top: 20px;
   display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #153955;
 }
 
 .section-meio {
-  width: 65%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: start;
   justify-content: space-between;
 }
-
+.flash {
+  border-radius: 10px;
+  width: 100px;
+  margin-bottom: 15px;
+  height: 4px;
+  background-color: #1ab394;
+}
 .section-inf {
+  padding-block: 30px;
   width: 49%;
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: start;
   flex-direction: column;
-}
+  margin-top: 80px;
+  margin-bottom: 10px;
 
-.inf-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
+  p {
+    padding-block: 15px;
+    height: 100px;
+    width: 100%;
+    text-align: start;
+    font-size: 26px;
+    color: #f2f2f2;
+  }
 
   h1 {
-    min-height: 300px;
+    margin-bottom: 10px;
     width: 100%;
     font-size: 45px;
     line-height: 57px;
     font-weight: 700;
     font-style: normal;
     color: $cor-de-title;
-
-    span {
-      color: #1ab394;
-    }
+    color: #f2f2f2;
   }
-
-  .ImgPosto {
-    width: 95%;
-    min-height: 250px;
-    object-fit: contain;
-  }
-  p {
-    margin: 10px 0;
-    width: 100%;
-    text-align: start;
-  }
-}
-.inf-text {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 25px;
-
-  p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 4px 0px;
-    font-size: 16px;
-
-    .FaApple {
-      width: 18px;
-      height: 18px;
-      margin-right: 10px;
-      color: #1ab394;
-    }
+  span {
+    color: #1ab394;
   }
 }
 
@@ -161,7 +144,7 @@
     }
   }
   button {
-    margin: 0 auto;
+    margin-top: 30px;
     width: 100%;
     padding-block: 10px;
     border-radius: 3px;
@@ -174,74 +157,5 @@
     font-style: normal;
     font-weight: 700;
     line-height: 16px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .section-meio {
-    width: 80%;
-  }
-}
-
-@media (max-width: 950px) {
-  .section-meio {
-    width: 90%;
-  }
-
-  .container-section {
-    height: 950px;
-    background-color: red;
-  }
-  .container-section {
-    width: 100%;
-    margin-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .container-section {
-    margin-top: 5px;
-    height: auto;
-    padding-block: 20px;
-  }
-  .section-form {
-    width: 100%;
-  }
-  .section-inf {
-    width: 100%;
-    margin-bottom: 20px;
-
-    .inf-img {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      width: 100%;
-
-      h1 {
-        min-height: 140px;
-        width: 100%;
-        font-size: 32px;
-        line-height: 40px;
-        font-weight: 700;
-        font-style: normal;
-        color: $cor-de-title;
-
-        span {
-          color: #f74926;
-        }
-      }
-    }
-  }
-  .section-meio {
-    width: 98%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
   }
 }
