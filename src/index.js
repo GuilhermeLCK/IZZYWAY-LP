@@ -10,6 +10,8 @@ import Integracoes from "./Components/Integracoes/Integracoes";
 
 import FormFooter from "./Components/FormFooter/FormFooter";
 
+import Footer from "./Components/Footer/Footer";
+
 import "./App.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -21,5 +23,7 @@ root.render(
     <Carrosel />
 
     <FormFooter />
+
+    <Footer />
   </React.StrictMode>
 );

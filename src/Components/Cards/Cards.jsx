@@ -24,19 +24,19 @@ function Cards() {
             <p>Acesse suas informações de qualquer lugar, a qualquer momento</p>
           </div>
           <div className="cards-img">
-            <img src={Nuvem} alt="" />
+            <img src={Suporte} alt="" />
             <h2>Suporte Humanizado</h2>
             <p>
               Suporte treinado e disponível todos os dias de 08h à meia-noite
             </p>
           </div>
           <div className="cards-img">
-            <img src={Nuvem} alt="" />
+            <img src={Implantacao} alt="" />
             <h2>Implantação eficiente</h2>
             <p>Oferecemos uma implantação rápida e sem gargarlos.</p>
           </div>
           <div className="cards-img">
-            <img src={Nuvem} alt="" />
+            <img src={Sistema} alt="" />
             <h2>Sistema multiloja</h2>
             <p>Gerenciar todas as suas unidades de forma centralizada</p>
           </div>

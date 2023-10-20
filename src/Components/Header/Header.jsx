@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import Goomer from "../../img/LOGO-CIMA.png";
+import LogoBranca from "../../img/LogoBranco.png";
 import { FaApple, FaRegClock } from "react-icons/fa";
 
 import Banner from "../../img/IzzyWayBanner.png";
@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <>
       <header className="container-header">
-        <h1>LOGO</h1>
+        <img src={LogoBranca} alt="Logo IzzWay Branca" />
       </header>
 
       <div className="container-section">
