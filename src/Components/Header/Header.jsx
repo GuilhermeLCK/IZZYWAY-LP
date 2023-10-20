@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <>
       <header className="container-header">
-        <img src={Goomer} alt="IzzyWay-Logo" />
+        <h1>LOGO</h1>
       </header>
 
       <div className="container-section">

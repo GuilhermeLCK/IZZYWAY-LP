@@ -6,7 +6,7 @@
   );
 }
 
-$animationSpeed: 5s;
+$animationSpeed: 35s;
 
 // Animation
 @keyframes scroll {
@@ -14,13 +14,14 @@ $animationSpeed: 5s;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 14));
+    transition: 0.5s;
   }
 }
 
 // Styling
 .slider {
-  background: #f0f7ff;
+  background: #ffff;
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.27);
   -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.27);
   -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.27);
@@ -36,8 +37,9 @@ $animationSpeed: 5s;
   &::after {
     @include white-gradient;
     content: "";
-    height: 150px;
+    height: 180px;
     position: absolute;
+
     width: 50px;
     z-index: 2;
   }
@@ -56,7 +58,7 @@ $animationSpeed: 5s;
   .slide-track {
     animation: scroll $animationSpeed linear infinite;
     display: flex;
-    width: calc(250px * 14);
+    width: calc(250px * 28);
   }
 
   .slide {
@@ -65,9 +67,9 @@ $animationSpeed: 5s;
     display: flex;
     align-items: center;
     img {
-      object-fit: cover;
+      object-fit: contain;
       height: auto;
-      width: 250px;
+      width: 200px;
     }
   }
 }

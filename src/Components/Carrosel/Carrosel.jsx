@@ -13,56 +13,94 @@ import foto8 from "../../img/8.png";
 
 function Carrosel() {
   return (
-    <div className="container-carrosel">
-      <div className="section-meio-carrosel">
-        <div class="slider">
-          <div class="slide-track">
-            <div class="slide">
-              <img src={foto1} />
-            </div>
-            <div class="slide">
-              <img src={foto2} />
-            </div>
-            <div class="slide">
-              <img src={foto3} />
-            </div>
-            <div class="slide">
-              <img src={foto4} />
-            </div>
-            <div class="slide">
-              <img src={foto5} />
-            </div>
-            <div class="slide">
-              <img src={foto6} />
-            </div>
-            <div class="slide">
-              <img src={foto7} />
-            </div>
-            <div class="slide">
-              <img src={foto8} />
-            </div>
-            <div class="slide">
-              <img src={foto1} />
-            </div>
-            <div class="slide">
-              <img src={foto2} />
-            </div>
-            <div class="slide">
-              <img src={foto3} />
-            </div>
-            <div class="slide">
-              <img src={foto4} />
-            </div>
-            <div class="slide">
-              <img src={foto5} />
-            </div>
-            <div class="slide">
-              <img src={foto6} />
-            </div>
-          </div>
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src={foto1} />
         </div>
-        ''
+        <div class="slide">
+          <img src={foto2} />
+        </div>
+        <div class="slide">
+          <img src={foto3} />
+        </div>
+        <div class="slide">
+          <img src={foto4} />
+        </div>
+        <div class="slide">
+          <img src={foto5} />
+        </div>
+        <div class="slide">
+          <img src={foto6} />
+        </div>
+        <div class="slide">
+          <img src={foto7} />
+        </div>
+        <div class="slide">
+          <img src={foto8} />
+        </div>
+        <div class="slide">
+          <img src={foto1} />
+        </div>
+        <div class="slide">
+          <img src={foto2} />
+        </div>
+        <div class="slide">
+          <img src={foto3} />
+        </div>
+        <div class="slide">
+          <img src={foto4} />
+        </div>
+        <div class="slide">
+          <img src={foto5} />
+        </div>
+        <div class="slide">
+          <img src={foto6} />
+        </div>
+        <div class="slide">
+          <img src={foto1} />
+        </div>
+        <div class="slide">
+          <img src={foto2} />
+        </div>
+        <div class="slide">
+          <img src={foto3} />
+        </div>
+        <div class="slide">
+          <img src={foto4} />
+        </div>
+        <div class="slide">
+          <img src={foto5} />
+        </div>
+        <div class="slide">
+          <img src={foto6} />
+        </div>
+        <div class="slide">
+          <img src={foto7} />
+        </div>
+        <div class="slide">
+          <img src={foto8} />
+        </div>
+        <div class="slide">
+          <img src={foto1} />
+        </div>
+        <div class="slide">
+          <img src={foto2} />
+        </div>
+        <div class="slide">
+          <img src={foto3} />
+        </div>
+        <div class="slide">
+          <img src={foto4} />
+        </div>
+        <div class="slide">
+          <img src={foto5} />
+        </div>
+        <div class="slide">
+          <img src={foto6} />
+        </div>
       </div>
+      ''
     </div>
   );
 }
