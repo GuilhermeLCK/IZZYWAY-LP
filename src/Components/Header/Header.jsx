@@ -31,14 +31,20 @@ const Header = () => {
 
   const [NomeDoRestaurante, SetNomeDoRestaurante] = useState("");
 
-  const [QuantidadeFuncionario, SetQuantidadeFuncionario] = useState("");
+  const [QuantidadeFuncionario, SetQuantidadeFuncionario] = useState("none");
 
   const handleSelectChange = (e) => {
-    SetQuantidadeFuncionario(e.target.value);
-    console.log(QuantidadeFuncionario);
+    const newValue = e.target.value;
+    SetQuantidadeFuncionario(newValue);
+    console.log(newValue); // Usando o valor atualizado
   };
 
   function EnviarDados() {
+    console.log(NameCompleto);
+    console.log(Email);
+    console.log(Telefone);
+    console.log(NomeDoRestaurante);
+    console.log(QuantidadeFuncionario);
     toast.success("Enviado com sucesso!", {
       position: "top-right",
       autoClose: 1500,
@@ -49,6 +55,12 @@ const Header = () => {
       progress: 0,
       theme: "light",
     });
+
+    SetNameCompleto("");
+    SetEmail("");
+    SetTelefone("");
+    SetNomeDoRestaurante("");
+    SetQuantidadeFuncionario("none");
   }
 
   return (
@@ -86,6 +98,7 @@ const Header = () => {
                     onChange={(e) => {
                       SetNameCompleto(e.target.value);
                     }}
+                    value={NameCompleto}
                   />
                 </div>
 
@@ -99,6 +112,7 @@ const Header = () => {
                     onChange={(e) => {
                       SetEmail(e.target.value);
                     }}
+                    value={Email}
                   />
                 </div>
 
@@ -112,6 +126,7 @@ const Header = () => {
                     onChange={(e) => {
                       SetTelefone(e.target.value);
                     }}
+                    value={Telefone}
                   />
                 </div>
 
@@ -125,6 +140,7 @@ const Header = () => {
                     onChange={(e) => {
                       SetNomeDoRestaurante(e.target.value);
                     }}
+                    value={NomeDoRestaurante}
                   />
                 </div>
 
@@ -136,7 +152,7 @@ const Header = () => {
                     value={QuantidadeFuncionario}
                     onChange={handleSelectChange}
                   >
-                    <option disabled selected>
+                    <option value="none" disabled selected>
                       Selecione uma opção
                     </option>
                     <option value="1">1</option>
