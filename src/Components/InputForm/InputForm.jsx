@@ -1,7 +1,8 @@
 import { React, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import MaskedInput from "react-maskedinput";
+import InputMask from "react-input-mask";
+
 import "./InputForm.scss";
 
 function InputForm() {
@@ -149,9 +150,9 @@ function InputForm() {
             <label>
               Telefone<span>*</span>
             </label>
-            <MaskedInput
+            <InputMask
               minLength={15}
-              mask="(11) 11111-1111"
+              mask="(99)99999-9999"
               placeholder="(00)00000-0000"
               onChange={(e) => {
                 SetTelefone(e.target.value);
