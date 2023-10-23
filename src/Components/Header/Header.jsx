@@ -3,7 +3,7 @@ import "./Header.scss";
 import LogoBranca from "../../img/LogoBranco.png";
 import { ToastContainer, toast } from "react-toastify";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import MaskedInput from "react-maskedinput";
+
 import InputForm from "../InputForm/InputForm";
 
 const Header = () => {
