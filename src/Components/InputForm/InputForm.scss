@@ -69,5 +69,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: 16px;
+    transition: 0.7s;
+    &:hover {
+      transition: 0.3s;
+      background: #00a383f5;
+    }
   }
 }

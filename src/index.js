@@ -34,8 +34,10 @@ root.render(
     />
     <Header />
     <Cards />
-    <Integracoes />
+    <Cartaz />
     <Carrosel />
+    <Integracoes />
+
     <FormFooter />
     <Footer />
   </React.StrictMode>

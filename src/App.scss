@@ -9,6 +9,8 @@ $cor-de-title: #0b0040;
 $tamanho-de-fonteP: 18px;
 
 * {
+  scroll-behavior: smooth;
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -29,6 +31,7 @@ $tamanho-de-fonteP: 18px;
 }
 
 body {
+  scroll-behavior: smooth;
   font-family: "Manrope", sans-serif;
   background-color: #ffff;
 }

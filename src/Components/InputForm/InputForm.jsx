@@ -131,7 +131,7 @@ function InputForm() {
 
   return (
     <>
-      <div className="form-table">
+      <div className="form-table" id="">
         <form onSubmit={EnviarDados}>
           <div className="form-inf">
             <p>

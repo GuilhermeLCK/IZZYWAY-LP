@@ -14,7 +14,9 @@ function Footer() {
       <div className="section-meio-Footer">
         <div className="section-contato">
           <h1>Entre em contato</h1>
-          <p>WWW.IZZYWAY.COM.BR</p>
+          <a href="https://www.izzyway.com.br" target="_blank">
+            www.izzyway.com
+          </a>
 
           <p>(85) 4102 - 8705</p>
         </div>
@@ -26,16 +28,28 @@ function Footer() {
 
           <p>Siga nas redes sociais</p>
           <div className="section-localizacao-link">
-            <a href="">
+            <a
+              href="https://www.facebook.com/izzywaytecnologia/?locale=pt_BR"
+              target="_blank"
+            >
               <img src={Face} alt="Logo" />
             </a>
-            <a href="">
+            <a
+              href="https://www.youtube.com/channel/UCjkF2C7oma58bwrZFkvoKAQ"
+              target="_blank"
+            >
               <img src={Yt} alt="Logo" />
             </a>
-            <a href="">
+            <a
+              href="https://www.instagram.com/izzywaytecnologia/?hl=pt"
+              target="_blank"
+            >
               <img src={Insta} alt="Logo" />
             </a>
-            <a href="">
+            <a
+              href="https://www.linkedin.com/company/izzyway/mycompany/"
+              target="_blank"
+            >
               <img src={Linkedin} alt="Logo" />
             </a>
           </div>
