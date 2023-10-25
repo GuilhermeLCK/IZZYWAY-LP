@@ -43,7 +43,7 @@ const Header = () => {
               <span>{text}</span>
             </p>
           </div>
-          <div className="section-form" id="FormClick">
+          <div className="section-form">
             <InputForm />
           </div>
         </div>

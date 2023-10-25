@@ -12,7 +12,7 @@ function FormFooter() {
         <div className="section-img-FormFooter">
           <img src={FotoForm} alt="" />
         </div>
-        <div className="section-former">
+        <div className="section-former" id="FormClick">
           <InputForm />
         </div>
       </div>
