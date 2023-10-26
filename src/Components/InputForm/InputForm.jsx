@@ -186,7 +186,7 @@ function InputForm() {
 
             <div className="label-input">
               <label>
-                Nome do restaurante<span>*</span>
+                Nome do Restaurante<span>*</span>
               </label>
               <input
                 type="text"
@@ -201,7 +201,7 @@ function InputForm() {
 
             <div className="label-input">
               <label>
-                Quantidade de funcionários<span>*</span>
+                Quantidade de Funcionários<span>*</span>
               </label>
               <select
                 value={QuantidadeFuncionario}
@@ -213,7 +213,7 @@ function InputForm() {
                 <option value="1 Funcionario">1</option>
                 <option value="1-5 Funcionarios">1 a 5</option>
                 <option value="6-10 Funcionarios">6 a 10</option>
-                <option value="Mais de 10 Funcionarios">Acima de 10</option>
+                <option value="Acima de 10 Funcionarios">Acima de 10</option>
               </select>
             </div>
 

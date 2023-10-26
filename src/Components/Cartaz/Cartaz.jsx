@@ -77,7 +77,7 @@ function Cartaz() {
                 <div className="section-duble-cartaz-inf">
                   <h2>FISCAL</h2>
                   <p>
-                    facilita a emissão de documentos fiscais, como (NF-e),
+                    Facilita a emissão de documentos fiscais, como (NF-e),
                     (NFS-e) além do (MDF-e). Fornece um gerenciador de XML para
                     organizar e armazenar os arquivos XML das notas fiscais,
                     para manter você atualizado com as regras fiscais vigentes.

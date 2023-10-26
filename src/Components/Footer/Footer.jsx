@@ -15,7 +15,7 @@ function Footer() {
         <div className="section-contato">
           <h1>Entre em contato</h1>
           <a href="https://www.izzyway.com.br" target="_blank">
-            www.izzyway.com
+            www.izzyway.com.br
           </a>
 
           <p>(85) 4102 - 8705</p>
@@ -26,7 +26,7 @@ function Footer() {
             60813-620
           </p>
 
-          <p>Siga nas redes sociais</p>
+          <p>Siga-nos nas redes sociais</p>
           <div className="section-localizacao-link">
             <a
               href="https://www.facebook.com/izzywaytecnologia/?locale=pt_BR"

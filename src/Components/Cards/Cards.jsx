@@ -2,7 +2,7 @@ import React from "react";
 import "./Cards.scss";
 import Nuvem from "../../img/26.png";
 import Suporte from "../../img/27.png";
-import Sistema from "../../img/28.png";
+import Sistema from "../../img/Carrinho.png";
 import Implantacao from "../../img/29.png";
 
 function Cards() {
@@ -13,7 +13,7 @@ function Cards() {
           <h1>Tudo em um só lugar</h1>
           <p>
             Potencialize o crescimento do seu restaurante com nosso sistema de
-            gestão em nuvem. conte com ferramentas poderosas para simplificar e
+            gestão em nuvem, conte com ferramentas poderosas para simplificar e
             agilizar o dia a dia da sua equipe.
           </p>
         </div>
@@ -38,7 +38,7 @@ function Cards() {
           <div className="cards-img">
             <img src={Sistema} alt="" />
             <h2>Sistema multiloja</h2>
-            <p>Gerenciar todas as suas unidades de forma centralizada</p>
+            <p>Gerencie todas as suas unidades de forma centralizada</p>
           </div>
         </div>
       </div>
