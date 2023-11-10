@@ -99,7 +99,7 @@
 }
 
 .section-duble-cartaz-divs {
-  min-height: 300px;
+  min-height: 350px;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -111,9 +111,7 @@
   margin-bottom: 20px;
   background-color: #f2f2f2;
 
-  @media screen and (max-width: 1500px) {
-    min-height: 350px;
-  }
+ 
 
   @media screen and (max-width: 900px) {
     width: 95%;
