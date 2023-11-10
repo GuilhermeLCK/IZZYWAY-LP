@@ -33,7 +33,7 @@ function Cards() {
           <div className="cards-img">
             <img src={Implantacao} alt="" />
             <h2>Implantação eficiente</h2>
-            <p>Oferecemos uma implantação rápida e sem gargarlos.</p>
+            <p>Oferecemos uma implantação rápida e sem gargalos.</p>
           </div>
           <div className="cards-img">
             <img src={Sistema} alt="" />
